@@ -1,0 +1,173 @@
+.wrap {
+    background-color: RGBA(232, 52, 78, 0.2);
+    height: auto;
+    padding-bottom: 50px;
+}
+
+.banner {
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    background-image: url("logo_red.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+span.example {
+    color: gray;
+    font-size: 14px;
+}
+
+.btn-sparta {
+    color: white;
+    background-color: #e8344e;
+    border: 1px solid #e8344e;
+}
+
+.btn-sparta-outline {
+    color: #e8344e;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid #e8344e;
+}
+
+.search-box{
+    width: 70%;
+    margin: 50px auto;
+    max-width: 700px;
+}
+
+.table{
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    table-layout: fixed;
+}
+
+.table th{
+    border-top-style: none;
+}
+
+td{
+    background-color: white;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+td > a, a:visited, a:hover, a:active{
+    color: black;
+}
+
+thead:first-child tr:first-child th:first-child{
+    border-radius:  10px 0 0 0;
+}
+
+thead:first-child tr:first-child th:last-child{
+    border-radius: 0 10px 0 0;
+}
+
+thead:last-child tr:last-child th:first-child{
+    border-radius: 0 0 0 10px;
+}
+
+thead:last-child tr:last-child th:last-child{
+    border-radius:  0 0 10px 0;
+}
+
+tr.highlight > td {
+    background-color: orange;
+    color: white;
+}
+
+tr.highlight a {
+    color: white;
+}
+
+.bn5 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .bn5:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .bn5:active {
+    color: #000;
+  }
+  
+  .bn5:active:after {
+    background: transparent;
+  }
+  
+  .bn5:hover:before {
+    opacity: 1;
+  }
+  
+  .bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
